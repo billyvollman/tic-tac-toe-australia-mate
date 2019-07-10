@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.x {
+    background-image: url(../tic_tac_toe_game/animated_kangaroo.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.o {
+    background-image: url(../tic_tac_toe_game/Animated_Koala_jump.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.boxes, .scores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+   text-align: center;
+   margin: 50px 0;
+}
+
+.boxes-container {
+    /* height: 100%;  */
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center; */
+}
+
+.boxes {
+    width: 600px;
+    height: 600px;
+}
+
+.box {
+    flex-basis: 33%;
+    
+}
+
+.top {
+    border-bottom: 1px solid black;
+}
+
+.middle {
+    border-bottom: 1px solid black;
+}
+
+.bottom {
+
+}
+
+.left {
+    border-right: 1px solid black;
+}
+
+.right {
+    border-left: 1px solid black;
+}
+
+footer {
+    height: 33%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.p1, .p2, .tie, .player {
+    width: 100px;
+    flex-basis: 33%;
+    justify-content: center;
+    text-align: center;
+}
