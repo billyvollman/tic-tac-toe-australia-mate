@@ -34,17 +34,12 @@ body {
 
 header {
    text-align: center;
-   margin: 50px 0;
+   margin: 30px 0;
    color: #137237;
-   font-size: 32px;
+   /* font-size: 32px; */
+   font-size: calc(1rem + 1vw);
 }
 
-.boxes-container {
-    /* height: 100%;  */
-    /* display: flex; 
-    align-items: center; 
-    justify-content: center; */
-}
 
 .boxes {
     /* width: 600px; */
@@ -88,7 +83,7 @@ footer {
     display: flex; 
     /* align-items: center;  */
     justify-content: space-evenly;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .p1, .p2, .tie, .player {
@@ -97,8 +92,9 @@ footer {
     justify-content: center;
     text-align: center;
     color: #137237;
-    font-size: 32px;
+    /* font-size: 32px; */
     min-width: 5vw;
+    font-size: calc(1rem + 1vw);
     
 }
 
@@ -151,7 +147,7 @@ footer {
     }
 }
   
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     header, .p1, .p2, .tie, .player {
         font-size: 1.25rem;
     }
@@ -173,4 +169,16 @@ footer {
     header {
         font-size: 1.25rem;
     }
-} 
+}  */
+
+@media (max-width: 50em) {
+    header {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 50em) {
+    .p1, .p2, .tie, .player {
+      font-size: 16px;
+    }
+  }
