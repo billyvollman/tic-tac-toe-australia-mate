@@ -101,6 +101,7 @@ footer {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: flash;
+    background-color: yellow
   }
 
 @-webkit-keyframes flash {
