@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
+    background-color: #1b763bde;
 }
 
 .x {
@@ -13,7 +14,7 @@ body {
 }
 
 .o {
-    background-image: url(../tic_tac_toe_game/Animated_Koala_jump.gif);
+    background-image: url(../tic_tac_toe_game/Animated_Koala_no_background.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,7 +102,7 @@ footer {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: flash;
-    background-color: yellow
+    background-color: yellow;
   }
 
 @-webkit-keyframes flash {

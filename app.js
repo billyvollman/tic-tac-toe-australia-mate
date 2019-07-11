@@ -38,6 +38,8 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('textresize')
+                player1Score.classList.add('textresize')
                 kangaroosRowTop.forEach(function(roo){
                     roo.classList.add('flash')
                 })
