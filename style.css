@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center; 
     /* background-color: rgba(27, 118, 59, 0.65) */
-    background: yellow;
+    background: #f7c41d;
 }
 
 .x {
@@ -51,11 +51,11 @@ header {
 }
 
 .top {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #137237;
 }
 
 .middle {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #137237;
 }
 
 .bottom {
@@ -63,11 +63,11 @@ header {
 }
 
 .left {
-    border-right: 1px solid black;
+    border-right: 2px solid #137237;
 }
 
 .right {
-    border-left: 1px solid black;
+    border-left: 2px solid #137237;
 }
 
 footer {
@@ -83,6 +83,8 @@ footer {
     flex-basis: 33%;
     justify-content: center;
     text-align: center;
+    color: #137237;
+    font-size: 32px;
 }
 
 .restart {
@@ -105,7 +107,7 @@ footer {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: flash;
-    background-color: yellow;
+    background-color: #f7c41d;
   }
 
 @-webkit-keyframes flash {
