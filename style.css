@@ -24,6 +24,12 @@ body {
 .boxes, .scores {
     display: flex;
     flex-wrap: wrap;
+    
+}
+
+.scores {
+    justify-content: space-evenly;
+    
 }
 
 header {
@@ -41,9 +47,16 @@ header {
 }
 
 .boxes {
-    width: 600px;
-    height: 600px;
+    /* width: 600px; */
+    /* width: 100%;
+    height: 600px; */
+    /* height: 60vh;
+    width: 33vw; */
+    /* flex: integer 1 0; */
+    min-height: 60vh;
+    min-width: 33vw;
 }
+
 
 .box {
     flex-basis: 33%;
@@ -71,20 +84,22 @@ header {
 }
 
 footer {
-    height: 33%;
+    /* height: 33%; */
     display: flex; 
-    align-items: center; 
-    justify-content: center;
+    /* align-items: center;  */
+    justify-content: space-evenly;
     margin: 50px 0;
 }
 
 .p1, .p2, .tie, .player {
-    width: 100px;
-    flex-basis: 33%;
+    /* width: 100px; */
+    flex: 0 0 33%;
     justify-content: center;
     text-align: center;
     color: #137237;
     font-size: 32px;
+    min-width: 5vw;
+    
 }
 
 .restart {
@@ -107,7 +122,7 @@ footer {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: flash;
-    background-color: #f7c41d;
+    background-color: rgba(19, 114, 55, 0.2)
   }
 
 @-webkit-keyframes flash {
@@ -123,7 +138,7 @@ footer {
     }
   }
   
-  @keyframes flash {
+@keyframes flash {
     from,
     50%,
     to {
@@ -134,5 +149,28 @@ footer {
     75% {
       opacity: 0;
     }
-  }
+}
   
+@media (max-width: 500px) {
+    header, .p1, .p2, .tie, .player {
+        font-size: 1.25rem;
+    }
+    .p1, .p2, .tie, .player {
+        min-width: 10vw;
+    }
+} 
+
+@media (max-height: 850px) {
+    .p1, .p2, .tie, .player {
+        font-size: 1.25rem;
+    }
+    .p1, .p2, .tie, .player {
+        min-width: 10vw;
+    }
+}
+
+@media (max-height: 780px) {
+    header {
+        font-size: 1.25rem;
+    }
+} 
