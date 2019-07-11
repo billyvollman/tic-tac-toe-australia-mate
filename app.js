@@ -8,7 +8,8 @@ var tieTitle = document.querySelector('.tie')
 var tieScore = document.querySelector('.tie.score')
 var player1Title = document.querySelector('.p1')
 var player1Score = document.querySelector('.one.score')
-
+var player2Title = document.querySelector('.p2')
+var player2Score = document.querySelector('.two.score')
 
 var turn = 'x';
 
@@ -26,11 +27,11 @@ var changeBox = function(event) {
             var kangaroosColumnRight = document.querySelectorAll('.right.x')
             var kangarooTopLeft = document.querySelector('.top.left.x')
             var kangarooTopRight = document.querySelector('.top.right.x')
-            var kangaroosMiddleCenter = document.querySelector('.middle.center.x')
-            var kangaroosBottomLeft = document.querySelector('.bottom.left.x')
-            var kangaroosBottomRight = document.querySelector('.bottom.right.x')
-            var kangarooTopDiagonal = document.querySelectorAll('.top.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.bottom.right.x').length
-            var kangarooBottomDiagonal = document.querySelectorAll('.bottom.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.top.right.x').length
+            var kangarooMiddleCenter = document.querySelector('.middle.center.x')
+            var kangarooBottomLeft = document.querySelector('.bottom.left.x')
+            var kangarooBottomRight = document.querySelector('.bottom.right.x')
+            var kangaroosTopDiagonal = document.querySelectorAll('.top.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.bottom.right.x').length
+            var kangaroosBottomDiagonal = document.querySelectorAll('.bottom.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.top.right.x').length
 
             turn = 'o'
             if (kangaroosRowTop.length === 3) {
@@ -99,22 +100,22 @@ var changeBox = function(event) {
                 turn = 'x'
                 restart.style.display = 'block'
                 return
-            } else if (kangarooTopDiagonal === 3) {
+            } else if (kangaroosTopDiagonal === 3) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
                 kangarooTopLeft.classList.add('flash')
-                kangaroosMiddleCenter.classList.add('flash')
-                kangaroosBottomRight.classList.add('flash')
+                kangarooMiddleCenter.classList.add('flash')
+                kangarooBottomRight.classList.add('flash')
                 player1Score.textContent = Number(player1Score.textContent) + 1
                 turn = 'x'
                 restart.style.display = 'block'
-            } else if (kangarooBottomDiagonal === 3) {
+            } else if (kangaroosBottomDiagonal === 3) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
-                kangaroosBottomLeft.classList.add('flash')
-                kangaroosMiddleCenter.classList.add('flash')
+                kangarooBottomLeft.classList.add('flash')
+                kangarooMiddleCenter.classList.add('flash')
                 kangarooTopRight.classList.add('flash')
                 player1Score.textContent = Number(player1Score.textContent) + 1
                 turn = 'x'
@@ -123,6 +124,107 @@ var changeBox = function(event) {
         } else if (turn === 'o' ) {
             event.target.classList.add('o')
             turn = 'x'
+            var koalasRowTop = document.querySelectorAll('.top.o')
+            var koalasRowMiddle = document.querySelectorAll('.middle.o')
+            var koalasRowBottom = document.querySelectorAll('.bottom.o')
+            var koalasColumnLeft = document.querySelectorAll('.left.o')
+            var koalasColumnCenter = document.querySelectorAll('.center.o')
+            var koalasColumnRight = document.querySelectorAll('.right.o')
+            var koalaTopLeft = document.querySelector('.top.left.o')
+            var koalaTopRight = document.querySelector('.top.right.o')
+            var koalaMiddleCenter = document.querySelector('.middle.center.o')
+            var koalaBottomLeft = document.querySelector('.bottom.left.o')
+            var koalaBottomRight = document.querySelector('.bottom.right.o')
+            var koalasTopDiagonal = document.querySelectorAll('.top.left.o').length + document.querySelectorAll('.middle.center.o').length + document.querySelectorAll('.bottom.right.o').length
+            var koalasBottomDiagonal = document.querySelectorAll('.bottom.left.o').length + document.querySelectorAll('.middle.center.o').length + document.querySelectorAll('.top.right.o').length
+
+            if (koalasRowTop.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasRowTop.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasRowMiddle.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasRowMiddle.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasRowBottom.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasRowBottom.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasColumnLeft.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasColumnLeft.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasColumnCenter.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasColumnCenter.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasColumnRight.length === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalasColumnRight.forEach(function(koala){
+                    koala.classList.add('flash')
+                })
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+                return
+            } else if (koalasTopDiagonal === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalaTopLeft.classList.add('flash')
+                koalaMiddleCenter.classList.add('flash')
+                koalaBottomRight.classList.add('flash')
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+            } else if (koalasBottomDiagonal === 3) {
+                console.log('winner')
+                player2Title.classList.add('flash')
+                player2Score.classList.add('flash')
+                koalaBottomLeft.classList.add('flash')
+                koalaMiddleCenter.classList.add('flash')
+                koalaTopRight.classList.add('flash')
+                player2Score.textContent = Number(player2Score.textContent) + 1
+                turn = 'x'
+                restart.style.display = 'block'
+            }
         } 
     }
 
@@ -153,6 +255,8 @@ var clearBoxes = function() {
     })
     player1Title.classList.remove('flash')
     player1Score.classList.remove('flash')
+    player2Title.classList.remove('flash')
+    player2Score.classList.remove('flash')
     tieTitle.classList.remove('flash')
     tieScore.classList.remove('flash')
 }
