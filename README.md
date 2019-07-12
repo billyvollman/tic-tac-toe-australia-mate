@@ -11,6 +11,7 @@ I've taken an Aussie stance on the game and have made the Xs & Os, either Kangar
 I've used animated gifs for the pieces.
 
 Current challenges I'm having are
+
 1.) Making the Javascript code condensed.
   - My current logic for traking players is via a series of IF and ELSE IF statements.
   - There has to be better way, but I'm sure where to begin and open to ideas and feedback.
