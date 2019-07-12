@@ -20,7 +20,7 @@ Current challenges I'm having are
   
 2.) Responsiveness not the best
   - I would like the game to be sizeable and playable regardless of device it is played on.  I made things in flex boxes but am
-  struggling with knowing how to make this work better.  I have found vh and vw which helped some but there must to be an easier way.
+  struggling with knowing how to make this work better.  I have found vh and vw which helped some but there must be an easier way.
  
 3.) To start game I would like the players to choose their side.  Either Kangaroo and Koala.
  
