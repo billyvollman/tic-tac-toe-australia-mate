@@ -13,6 +13,11 @@ var player2Score = document.querySelector('.two.score')
 
 var turn = 'x';
 
+if (turn === 'x') {
+    player1Title.classList.add('turn')
+    player1Title.textContent = 'Player 1 🦘\n turn'
+}
+
 var changeBox = function(event) {
     console.log('click is working')
     if (event.target.classList.contains('x') === false && event.target.classList.contains('o') === false) {
@@ -32,8 +37,12 @@ var changeBox = function(event) {
             var kangarooBottomRight = document.querySelector('.bottom.right.x')
             var kangaroosTopDiagonal = document.querySelectorAll('.top.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.bottom.right.x').length
             var kangaroosBottomDiagonal = document.querySelectorAll('.bottom.left.x').length + document.querySelectorAll('.middle.center.x').length + document.querySelectorAll('.top.right.x').length
-
+            
+            player1Title.classList.remove('turn')
+            player1Title.textContent = 'Player 1 🦘'
             turn = 'o'
+            player2Title.classList.add('turn')
+            player2Title.textContent = 'Player 2 🐨\n turn'
             if (kangaroosRowTop.length === 3) {
                 console.log('winner')
                 player1Title.classList.add('flash')
@@ -123,7 +132,11 @@ var changeBox = function(event) {
             }
         } else if (turn === 'o' ) {
             event.target.classList.add('o')
+            player2Title.classList.remove('turn')
+            player2Title.textContent = 'Player 2 🐨'
             turn = 'x'
+            player1Title.classList.add('turn')
+            player1Title.textContent = 'Player 1 🦘\n turn'
             var koalasRowTop = document.querySelectorAll('.top.o')
             var koalasRowMiddle = document.querySelectorAll('.middle.o')
             var koalasRowBottom = document.querySelectorAll('.bottom.o')
@@ -231,7 +244,12 @@ var changeBox = function(event) {
     var kangarooBoxes = document.querySelectorAll('.x')
     if (kangarooBoxes.length === 5) {
         console.log('time to reset')
+        player1Title.textContent = 'Player 1 🦘'
+        player2Title.textContent = 'Player 2 🐨'
+        player1Title.classList.remove('turn')
+        player2Title.classList.remove('turn')
         tieTitle.classList.add('flash')
+        tieTitle.classList.add('winnerText')
         tieScore.classList.add('flash')
         boxes.forEach(function(box){
             box.classList.add('flash')
@@ -259,6 +277,7 @@ var clearBoxes = function() {
     player2Score.classList.remove('flash')
     tieTitle.classList.remove('flash')
     tieScore.classList.remove('flash')
+    tieTitle.classList.remove('winnerText')
 }
 restart.addEventListener('click', clearBoxes)
 

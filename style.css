@@ -21,6 +21,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.turn {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgba(19, 114, 55, 0.2);
+}
+
+.winnerText {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 .boxes, .scores {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +129,7 @@ footer {
     animation-fill-mode: none;
     animation-play-state: running;
     animation-name: flash;
-    background-color: rgba(19, 114, 55, 0.2)
+    background-color: rgba(19, 114, 55, 0.2);
   }
 
 @-webkit-keyframes flash {
