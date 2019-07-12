@@ -77,6 +77,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosRowBottom.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -88,6 +92,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosColumnLeft.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -99,6 +107,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosColumnCenter.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -110,6 +122,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosColumnRight.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -121,6 +137,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangarooTopLeft.classList.add('flash')
                 kangarooMiddleCenter.classList.add('flash')
                 kangarooBottomRight.classList.add('flash')
@@ -131,6 +151,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangarooBottomLeft.classList.add('flash')
                 kangarooMiddleCenter.classList.add('flash')
                 kangarooTopRight.classList.add('flash')
@@ -163,6 +187,12 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
+
                 koalasRowTop.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -174,6 +204,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 koalasRowMiddle.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -185,6 +219,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 koalasRowBottom.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -196,6 +234,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 koalasColumnLeft.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -207,6 +249,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 koalasColumnCenter.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -218,6 +264,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player2Title.classList.add('flash')
                 player2Score.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 koalasColumnRight.forEach(function(koala){
                     koala.classList.add('flash')
                 })
@@ -232,6 +282,10 @@ var changeBox = function(event) {
                 koalaTopLeft.classList.add('flash')
                 koalaMiddleCenter.classList.add('flash')
                 koalaBottomRight.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 player2Score.textContent = Number(player2Score.textContent) + 1
                 turn = 'x'
                 restart.style.display = 'block'
@@ -242,6 +296,10 @@ var changeBox = function(event) {
                 koalaBottomLeft.classList.add('flash')
                 koalaMiddleCenter.classList.add('flash')
                 koalaTopRight.classList.add('flash')
+                player2Title.classList.add('winnerText')
+                player2Title.textContent = 'Player 2 🐨\n winner'
+                player1Title.classList.remove('turn')
+                player1Title.textContent = 'Player 1 🦘'
                 player2Score.textContent = Number(player2Score.textContent) + 1
                 turn = 'x'
                 restart.style.display = 'block'
@@ -287,8 +345,10 @@ var clearBoxes = function() {
     tieScore.classList.remove('flash')
     tieTitle.classList.remove('winnerText')
     player1Title.classList.remove('winnerText')
+    player2Title.classList.remove('winnerText')
     player1Title.classList.add('turn')
     player1Title.textContent = 'Player 1 🦘\n turn'
+    player2Title.textContent = 'Player 2 🐨'
 }
 restart.addEventListener('click', clearBoxes)
 
