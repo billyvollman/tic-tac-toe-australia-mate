@@ -24,7 +24,7 @@ Current challenges I'm having are
  
 3.) To start game I would like the players to choose their side.  Either Kangaroo and Koala.
  
-4.) At end of game I would like and image to appear based on who won.  If Koala, show an aniamted gif for Koala,
+4.) At end of game I would like an image to appear based on who won.  If Koala, show an aniamted gif for Koala,
  if Kangaroo show Kangaroo, if tie show both animals.
  
 5.) Allow players to add their own names, rather than Player 1 or Player 2
