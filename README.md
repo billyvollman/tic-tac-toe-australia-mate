@@ -14,7 +14,7 @@ Current challenges I'm having are
 
 1.) Making the Javascript code condensed.
   - My current logic for traking players is via a series of IF and ELSE IF statements.
-  - There has to be better way, but I'm sure where to begin and open to ideas and feedback.
+  - There has to be better way, but I'm not sure where to begin and open to ideas and feedback.
   - I'm a little afraid to add more features to game as the code would blow out more,
     so rather than add more things to keep track of, it might be good to stop and think the logic through some more
   
