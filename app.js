@@ -47,6 +47,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosRowTop.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -58,6 +62,10 @@ var changeBox = function(event) {
                 console.log('winner')
                 player1Title.classList.add('flash')
                 player1Score.classList.add('flash')
+                player1Title.classList.add('winnerText')
+                player1Title.textContent = 'Player 1 🦘\n winner'
+                player2Title.classList.remove('turn')
+                player2Title.textContent = 'Player 2 🐨'
                 kangaroosRowMiddle.forEach(function(roo){
                     roo.classList.add('flash')
                 })
@@ -278,6 +286,9 @@ var clearBoxes = function() {
     tieTitle.classList.remove('flash')
     tieScore.classList.remove('flash')
     tieTitle.classList.remove('winnerText')
+    player1Title.classList.remove('winnerText')
+    player1Title.classList.add('turn')
+    player1Title.textContent = 'Player 1 🦘\n turn'
 }
 restart.addEventListener('click', clearBoxes)
 

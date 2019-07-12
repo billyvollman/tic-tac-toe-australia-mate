@@ -32,6 +32,11 @@ body {
     font-size: 2rem;
 }
 
+.playerWinText {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 .boxes, .scores {
     display: flex;
     flex-wrap: wrap;
