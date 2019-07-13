@@ -4,7 +4,7 @@ G'day Y'all,
 
 I'm Billy Vollman and a current student at General Assmebly in Melbourne, enrolled in the Software Engineering Immersive course.  This is our first class project to create a Tic Tac Toe game which allows two players to play tic tac toe.
 
-link to game is here
+Link to game is here
 file:///Users/billyvollman/Documents/sei/projects/tic_tac_toe_game/index.html
 
 
