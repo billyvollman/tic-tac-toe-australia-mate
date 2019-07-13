@@ -6,9 +6,6 @@ I'm Billy Vollman and a current student at General Assmebly in Melbourne, enroll
 
 Link to game is here [Tic Tac Toe Australia Mate](https://billyvollman.github.io/tic-tac-toe-australia-mate/)
 
-**file:///Users/billyvollman/Documents/sei/projects/tic_tac_toe_game/index.html**
-
-
 I've taken an Aussie stance on game and have made the Xs & Os, either Kangaroos or Koalas.  To have the game appear more dynamic, I've used animated gifs for the pieces.
 
 ### Current challenges I'm having are:
